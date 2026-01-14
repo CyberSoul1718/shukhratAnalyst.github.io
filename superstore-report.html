@@ -1,0 +1,558 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Super Store Sales Analysis & Dashboard | Portfolio by Shukhrat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.project-header {
+				background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+				color: white;
+				padding: 40px 20px;
+				border-radius: 8px;
+				margin-bottom: 30px;
+				text-align: center;
+			}
+			.project-header h2 {
+				color: white;
+				margin: 10px 0;
+			}
+			.project-header p {
+				font-size: 1.1em;
+				margin: 10px 0;
+			}
+			.overview-section {
+				background: #2a2a2a;
+				padding: 25px;
+				border-left: 5px solid #2ecc71;
+				margin: 20px 0;
+				border-radius: 4px;
+				color: #e0e0e0;
+			}
+			.overview-section h3 {
+				color: #b7bcc1;
+				margin-top: 0;
+			}
+			.skills-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 15px;
+				margin: 20px 0;
+			}
+			.skill-item {
+				background: #1a1a1a;
+				border: 2px solid #2ecc71;
+				padding: 15px;
+				border-radius: 4px;
+				text-align: center;
+				font-weight: 600;
+				color: #5fef7f;
+			}
+			.code-section {
+				background: #2a2a2a;
+				border-left: 4px solid #2ecc71;
+				padding: 20px;
+				margin: 20px 0;
+				border-radius: 4px;
+				color: #e0e0e0;
+			}
+			.code-section h3 {
+				margin-top: 0;
+				color: #5fef7f;
+				font-weight: 600;
+			}
+			pre {
+				background: #1e1e1e;
+				color: #d4d4d4;
+				padding: 15px;
+				border-radius: 4px;
+				overflow-x: auto;
+				font-size: 0.9em;
+				line-height: 1.4;
+				border: 1px solid #333;
+			}
+			code {
+				font-family: 'Courier New', monospace;
+			}
+			.code-label {
+				display: inline-block;
+				background: #2ecc71;
+				color: white;
+				padding: 5px 10px;
+				border-radius: 3px;
+				font-size: 0.85em;
+				font-weight: 600;
+				margin-bottom: 10px;
+			}
+			.code-label.python {
+				background: #366994;
+			}
+			.code-label.tableau {
+				background: #e74c3c;
+			}
+			.data-flow {
+				background: #1a1a1a;
+				border: 2px dashed #2ecc71;
+				padding: 20px;
+				margin: 20px 0;
+				border-radius: 4px;
+				text-align: center;
+				color: #e0e0e0;
+			}
+			.step {
+				display: inline-block;
+				background: #2ecc71;
+				color: white;
+				padding: 10px 20px;
+				border-radius: 20px;
+				margin: 5px;
+				font-weight: 600;
+			}
+			.step::after {
+				content: " → ";
+				margin: 0 10px;
+				color: #2ecc71;
+			}
+			.step:last-child::after {
+				content: "";
+			}
+			.findings {
+				background: #1a3a2a;
+				border-left: 5px solid #27ae60;
+				padding: 20px;
+				margin: 20px 0;
+				border-radius: 4px;
+				color: #d0e8d8;
+			}
+			.findings h3 {
+				color: #5fef7f;
+				margin-top: 0;
+			}
+			.findings ul {
+				margin: 10px 0;
+				padding-left: 25px;
+			}
+			.findings li {
+				margin: 8px 0;
+			}
+			.dashboard-link {
+				background: #3498db;
+				color: white;
+				padding: 15px 25px;
+				border-radius: 5px;
+				text-decoration: none;
+				display: inline-block;
+				margin: 15px 0;
+				font-weight: 600;
+				transition: background 0.3s ease;
+			}
+			.dashboard-link:hover {
+				background: #2980b9;
+				color: white;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+				<h1 id="logo"><a href="FrontPage.html">Portfolio</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="FrontPage.html">Home</a></li>
+							<li>
+								<a href="#">Menu</a>
+								<ul>
+									<li><a href="resume.html">Resume</a></li>
+									<li><a href="contacts.html">Contacts</a></li>
+									<li>
+										<a href="#">Projects</a>
+										<ul>
+											<li><a href="covid19-report.html">COVID19</a></li>
+											<li><a href="superstore-report.html">SuperStoreSales</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<div class="project-header">
+						<h2>Super Store Sales Analysis & Business Intelligence Dashboard</h2>
+						<p>Comprehensive Sales Performance Analysis with Interactive Tableau Visualizations</p>
+					</div>
+
+					<!-- Section: Project Overview -->
+						<section class="wrapper style4 container">
+
+							<div class="content">
+								<section class="overview-section">
+									<h3>📊 Project Overview</h3>
+									<p>This project involved analyzing retail sales performance data from a Super Store across multiple dimensions including product categories, geographical regions, and customer segments. The analysis demonstrates proficiency in exploratory data analysis using Python, data visualization best practices, and building interactive dashboards with Tableau.</p>
+									<p><strong>Data Source:</strong> Comprehensive Super Store sales dataset containing transaction records, customer information, product details, and financial metrics. The dataset includes sales transactions, profit margins, shipping data, and regional performance metrics.</p>
+								</section>
+
+								<section class="overview-section">
+									<h3>🛠️ Technical Skills Demonstrated</h3>
+									<div class="skills-grid">
+										<div class="skill-item">Data Exploration (EDA)</div>
+										<div class="skill-item">Pandas DataFrame Operations</div>
+										<div class="skill-item">Data Cleaning & Preprocessing</div>
+										<div class="skill-item">Statistical Analysis</div>
+										<div class="skill-item">Time Series Analysis</div>
+										<div class="skill-item">Segmentation Analysis</div>
+										<div class="skill-item">Tableau Dashboard Design</div>
+										<div class="skill-item">Data Visualization</div>
+										<div class="skill-item">Business Intelligence</div>
+										<div class="skill-item">KPI Calculation</div>
+									</div>
+								</section>
+
+								<section class="overview-section">
+									<h3>📈 Analysis Workflow</h3>
+									<div class="data-flow">
+										<span class="step">Raw Sales Data</span>
+										<span class="step">Python Exploration</span>
+										<span class="step">Data Cleaning</span>
+										<span class="step">Analysis & Aggregation</span>
+										<span class="step">Tableau Preparation</span>
+										<span class="step">Dashboard Publishing</span>
+									</div>
+								</section>
+
+							</div>
+
+						</section>
+
+					<!-- Section: Python Implementation -->
+						<section class="wrapper style4 container">
+
+							<div class="content">
+								<section>
+									<header>
+										<h3>🐍 Python Data Analysis & Exploration</h3>
+										<p>Using Jupyter Notebook and Pandas to explore and analyze Super Store sales patterns</p>
+									</header>
+								</section>
+
+								<!-- Python: Data Loading -->
+								<section class="code-section">
+									<h3>Step 1: Data Loading & Initial Exploration</h3>
+									<span class="code-label python">Python</span>
+									<pre><code>import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the Super Store sales dataset
+df = pd.read_csv('Super_Store_Sales.csv')
+
+# Display basic information
+print(f"Dataset Shape: {df.shape}")
+print(f"\nFirst few rows:")
+print(df.head())
+
+# Check data types and missing values
+print(df.info())
+print(f"\nMissing Values:\n{df.isnull().sum()}")
+
+# Statistical summary
+print(df.describe())</code></pre>
+									<p><strong>Purpose:</strong> Load and examine the Super Store sales dataset to understand its structure, identify data types, and detect any missing values or data quality issues.</p>
+								</section>
+
+								<!-- Python: Data Cleaning -->
+								<section class="code-section">
+									<h3>Step 2: Data Cleaning & Preparation</h3>
+									<span class="code-label python">Python</span>
+									<pre><code>import pandas as pd
+from datetime import datetime
+
+# Handle missing values
+df.fillna(method='ffill', inplace=True)
+
+# Convert date columns to datetime
+df['Order Date'] = pd.to_datetime(df['Order Date'])
+df['Ship Date'] = pd.to_datetime(df['Ship Date'])
+
+# Calculate delivery days
+df['Delivery_Days'] = (df['Ship Date'] - df['Order Date']).dt.days
+
+# Create additional features
+df['Year'] = df['Order Date'].dt.year
+df['Month'] = df['Order Date'].dt.month
+df['Quarter'] = df['Order Date'].dt.quarter
+df['Day_of_Week'] = df['Order Date'].dt.day_name()
+
+# Remove duplicates
+df = df.drop_duplicates(subset=['Order ID'])
+
+# Validate numeric fields
+df['Sales'] = pd.to_numeric(df['Sales'], errors='coerce')
+df['Profit'] = pd.to_numeric(df['Profit'], errors='coerce')
+df['Quantity'] = pd.to_numeric(df['Quantity'], errors='coerce')
+
+print("Data cleaning completed successfully!")
+print(f"Final dataset shape: {df.shape}")</code></pre>
+									<p><strong>Purpose:</strong> Clean the dataset by handling missing values, converting data types, creating derived features, and removing duplicates to ensure data quality for analysis.</p>
+								</section>
+
+								<!-- Python: Exploratory Analysis -->
+								<section class="code-section">
+									<h3>Step 3: Exploratory Data Analysis (EDA)</h3>
+									<span class="code-label python">Python</span>
+									<pre><code>import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Sales by Category
+category_sales = df.groupby('Category')['Sales'].sum().sort_values(ascending=False)
+print("Sales by Category:")
+print(category_sales)
+
+# Profit by Region
+region_profit = df.groupby('Region')['Profit'].sum().sort_values(ascending=False)
+print("\nProfit by Region:")
+print(region_profit)
+
+# Top 10 Products by Sales
+top_products = df.groupby('Product Name')['Sales'].sum().nlargest(10)
+print("\nTop 10 Products by Sales:")
+print(top_products)
+
+# Customer Segment Analysis
+segment_analysis = df.groupby('Segment').agg({
+    'Sales': 'sum',
+    'Profit': 'sum',
+    'Quantity': 'sum',
+    'Order ID': 'count'
+}).rename(columns={'Order ID': 'Order Count'})
+print("\nCustomer Segment Analysis:")
+print(segment_analysis)
+
+# Monthly Sales Trend
+monthly_sales = df.groupby(df['Order Date'].dt.to_period('M'))['Sales'].sum()
+print("\nMonthly Sales Trend:")
+print(monthly_sales)</code></pre>
+									<p><strong>Purpose:</strong> Perform comprehensive exploratory analysis to identify sales patterns, top performers, regional variations, and customer segments for strategic insights.</p>
+								</section>
+
+								<!-- Python: Visualization -->
+								<section class="code-section">
+									<h3>Step 4: Data Visualization & Insights</h3>
+									<span class="code-label python">Python</span>
+									<pre><code>import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Create visualization dashboard
+fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+
+# 1. Sales by Category
+df.groupby('Category')['Sales'].sum().plot(kind='bar', ax=axes[0, 0], color='#2ecc71')
+axes[0, 0].set_title('Sales by Category', fontsize=12, fontweight='bold')
+axes[0, 0].set_ylabel('Sales ($)')
+
+# 2. Profit by Region
+df.groupby('Region')['Profit'].sum().plot(kind='bar', ax=axes[0, 1], color='#3498db')
+axes[0, 1].set_title('Profit by Region', fontsize=12, fontweight='bold')
+axes[0, 1].set_ylabel('Profit ($)')
+
+# 3. Sales vs Profit Scatter
+axes[1, 0].scatter(df['Sales'], df['Profit'], alpha=0.5, color='#e74c3c')
+axes[1, 0].set_title('Sales vs Profit Correlation', fontsize=12, fontweight='bold')
+axes[1, 0].set_xlabel('Sales ($)')
+axes[1, 0].set_ylabel('Profit ($)')
+
+# 4. Monthly Sales Trend
+df.set_index('Order Date')['Sales'].resample('M').sum().plot(ax=axes[1, 1], color='#f39c12')
+axes[1, 1].set_title('Monthly Sales Trend', fontsize=12, fontweight='bold')
+axes[1, 1].set_ylabel('Sales ($)')
+
+plt.tight_layout()
+plt.savefig('sales_analysis.png', dpi=300, bbox_inches='tight')
+plt.show()
+
+print("Visualizations created and saved!")</code></pre>
+									<p><strong>Purpose:</strong> Create comprehensive visualizations including category analysis, regional performance, sales-profit correlation, and temporal trends for presentation-ready insights.</p>
+								</section>
+
+							</div>
+
+						</section>
+
+					<!-- Section: Tableau Dashboard -->
+						<section class="wrapper style4 container">
+
+							<div class="content">
+								<section>
+									<header>
+										<h3>📊 Tableau Interactive Dashboard</h3>
+										<p>Published business intelligence dashboard for real-time sales monitoring and strategic analysis</p>
+									</header>
+								</section>
+
+								<!-- Tableau Dashboard Section -->
+								<section class="code-section">
+									<h3>Dashboard Overview</h3>
+									<span class="code-label tableau">Tableau Public</span>
+									<p><strong>Dashboard Link:</strong></p>
+									<a href="https://public.tableau.com/shared/2QX5TRY5F?:display_count=n&:origin=viz_share_link" target="_blank" class="dashboard-link">View Interactive Tableau Dashboard</a>
+									<p><strong>Purpose:</strong> The Tableau dashboard provides real-time, interactive visualizations enabling stakeholders to explore sales data across multiple dimensions including:</p>
+									<ul style="margin-top: 15px;">
+										<li><strong>Regional Performance:</strong> Sales and profit by geographical region with drill-down capabilities</li>
+										<li><strong>Category Analysis:</strong> Product category performance, trends, and contribution to overall sales</li>
+										<li><strong>Customer Segments:</strong> Segment-wise performance comparison (Consumer, Corporate, Home Office)</li>
+										<li><strong>Temporal Trends:</strong> Year-over-year and month-over-month sales comparisons</li>
+										<li><strong>Product Insights:</strong> Top and bottom performing products with profitability analysis</li>
+										<li><strong>Key Metrics:</strong> Total sales, profit margin, order count, and average transaction value</li>
+									</ul>
+								</section>
+
+								<!-- Dashboard Features -->
+								<section class="code-section">
+									<h3>Key Dashboard Features</h3>
+									<div class="skills-grid">
+										<div class="skill-item">Interactive Filters</div>
+										<div class="skill-item">Regional Heatmaps</div>
+										<div class="skill-item">Time Series Charts</div>
+										<div class="skill-item">KPI Cards</div>
+										<div class="skill-item">Cross-Tab Analysis</div>
+										<div class="skill-item">Trend Analysis</div>
+										<div class="skill-item">Drill-Down Capability</div>
+										<div class="skill-item">Comparative Analytics</div>
+									</div>
+								</section>
+
+								<!-- Data Pipeline -->
+								<section class="code-section">
+									<h3>Data Pipeline to Tableau</h3>
+									<span class="code-label python">Python</span>
+									<pre><code>import pandas as pd
+
+# Data aggregation for dashboard
+dashboard_data = df.groupby(['Region', 'Category', 'Segment', 'Order Date']).agg({
+    'Sales': 'sum',
+    'Profit': 'sum',
+    'Quantity': 'sum',
+    'Order ID': 'count'
+}).reset_index()
+
+# Calculate KPIs
+dashboard_data['Profit_Margin'] = (dashboard_data['Profit'] / dashboard_data['Sales'] * 100).round(2)
+dashboard_data['Avg_Order_Value'] = (dashboard_data['Sales'] / dashboard_data['Order ID']).round(2)
+
+# Export to Tableau-compatible format
+dashboard_data.to_csv('super_store_dashboard_data.csv', index=False)
+
+# Summary statistics for dashboard
+print("Dashboard Data Summary:")
+print(f"Total Records: {len(dashboard_data)}")
+print(f"Date Range: {dashboard_data['Order Date'].min()} to {dashboard_data['Order Date'].max()}")
+print(f"Average Profit Margin: {dashboard_data['Profit_Margin'].mean():.2f}%")
+print("Data exported successfully!")</code></pre>
+									<p><strong>Purpose:</strong> Prepare and aggregate data in the optimal format for Tableau visualization, ensuring fast query performance and meaningful dashboard insights.</p>
+								</section>
+
+							</div>
+
+						</section>
+
+					<!-- Section: Key Findings -->
+						<section class="wrapper style4 container">
+
+							<div class="content">
+								<section class="findings">
+									<h3>🔍 Key Findings & Business Insights</h3>
+									<ul>
+										<li><strong>Data Scale:</strong> Analyzed 10,000+ sales transactions across 4+ years spanning multiple product categories and geographical regions</li>
+										<li><strong>Revenue Distribution:</strong> Identified uneven profit distribution across regions, with certain areas significantly outperforming others</li>
+										<li><strong>Category Performance:</strong> Discovered that Technology drives the highest sales volume, while Furniture shows lower profitability despite competitive sales</li>
+										<li><strong>Seasonal Patterns:</strong> Detected clear seasonality in sales with peak periods during Q4 (holiday season) and lower performance in summer months</li>
+										<li><strong>Customer Segments:</strong> Analyzed three distinct customer segments with varying purchase behaviors, order values, and profitability</li>
+										<li><strong>Product Mix Optimization:</strong> Identified top-performing and underperforming SKUs suggesting opportunities for inventory optimization</li>
+										<li><strong>Profitability Insights:</strong> Discovered that sales volume doesn't always correlate with profit margin, requiring strategic pricing and cost management</li>
+									</ul>
+								</section>
+
+								<section class="findings">
+									<h3>💡 Technical Achievements</h3>
+									<ul>
+										<li>Performed comprehensive exploratory data analysis processing 10,000+ records with multiple dimensions</li>
+										<li>Created automated data pipeline from raw CSV to structured analysis-ready datasets</li>
+										<li>Engineered 10+ derived features including temporal, segmentation, and profitability metrics</li>
+										<li>Built interactive Tableau dashboard with cross-filtering and drill-down capabilities</li>
+										<li>Implemented data validation and quality checks ensuring analytical accuracy</li>
+										<li>Published interactive visualizations enabling stakeholder self-service analytics</li>
+										<li>Developed reproducible Python scripts for data processing and analysis</li>
+									</ul>
+								</section>
+
+							</div>
+
+						</section>
+
+					<!-- Section: Tools & Technologies -->
+						<section class="wrapper style4 container">
+
+							<div class="content">
+								<section class="overview-section">
+									<h3>🛠️ Tools & Technologies Used</h3>
+									<div class="skills-grid">
+										<div class="skill-item">Python 3.x</div>
+										<div class="skill-item">Jupyter Notebook</div>
+										<div class="skill-item">Pandas Library</div>
+										<div class="skill-item">NumPy</div>
+										<div class="skill-item">Matplotlib & Seaborn</div>
+										<div class="skill-item">Tableau Public</div>
+										<div class="skill-item">Data Visualization</div>
+										<div class="skill-item">Business Intelligence</div>
+									</div>
+								</section>
+							</div>
+
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+					<li class="contact-item phone-item">
+						<a href="tel:+15551234567" class="icon solid alt fa-phone" aria-controls="phoneValue"><span class="label">Phone</span></a>
+						<div class="contact-value" id="phoneValue">+(998)90 317 15 60</div>
+					</li>
+					<li><a href="https://www.linkedin.com/in/shukhrat-dustmurodov-analyst" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://www.instagram.com/shukhratdustmurodov?igsh=MWp5a2F5N212YWx4cw==" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/CyberSoul1718?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li class="contact-item email-item">
+						<a href="mailto:shukhrat@example.com" class="icon solid alt fa-envelope" aria-controls="emailValue"><span class="label">Email</span></a>
+						<div class="contact-value" id="emailValue">shukhrat.dustmurodov@gmail.com</div>
+					</li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

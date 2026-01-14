@@ -1,0 +1,666 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>COVID-19 Data Analysis Project | Portfolio by Shukhrat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.project-header {
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				color: white;
+				padding: 40px 20px;
+				border-radius: 8px;
+				margin-bottom: 30px;
+				text-align: center;
+			}
+			.project-header h2 {
+				color: white;
+				margin: 10px 0;
+			}
+			.project-header p {
+				font-size: 1.1em;
+				margin: 10px 0;
+			}
+			.overview-section {
+				background: #2a2a2a;
+				padding: 25px;
+				border-left: 5px solid #667eea;
+				margin: 20px 0;
+				border-radius: 4px;
+				color: #e0e0e0;
+			}
+			.overview-section h3 {
+				color: #b7bcc1;
+				margin-top: 0;
+			}
+			.skills-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 15px;
+				margin: 20px 0;
+			}
+			.skill-item {
+				background: #1a1a1a;
+				border: 2px solid #667eea;
+				padding: 15px;
+				border-radius: 4px;
+				text-align: center;
+				font-weight: 600;
+				color: #88ccff;
+			}
+			.code-section {
+				background: #2a2a2a;
+				border-left: 4px solid #667eea;
+				padding: 20px;
+				margin: 20px 0;
+				border-radius: 4px;
+				color: #e0e0e0;
+			}
+			.code-section h3 {
+				margin-top: 0;
+				color: #88ccff;
+				font-weight: 600;
+			}
+			pre {
+				background: #1e1e1e;
+				color: #d4d4d4;
+				padding: 15px;
+				border-radius: 4px;
+				overflow-x: auto;
+				font-size: 0.9em;
+				line-height: 1.4;
+				border: 1px solid #333;
+			}
+			code {
+				font-family: 'Courier New', monospace;
+			}
+			.code-label {
+				display: inline-block;
+				background: #667eea;
+				color: white;
+				padding: 5px 10px;
+				border-radius: 3px;
+				font-size: 0.85em;
+				font-weight: 600;
+				margin-bottom: 10px;
+			}
+			.code-label.python {
+				background: #366994;
+			}
+			.code-label.sql {
+				background: #cc2927;
+			}
+			.data-flow {
+				background: #1a1a1a;
+				border: 2px dashed #667eea;
+				padding: 20px;
+				margin: 20px 0;
+				border-radius: 4px;
+				text-align: center;
+				color: #e0e0e0;
+			}
+			.step {
+				display: inline-block;
+				background: #667eea;
+				color: white;
+				padding: 10px 20px;
+				border-radius: 20px;
+				margin: 5px;
+				font-weight: 600;
+			}
+			.step::after {
+				content: " → ";
+				margin: 0 10px;
+				color: #667eea;
+			}
+			.step:last-child::after {
+				content: "";
+			}
+			.findings {
+				background: #1a3a40;
+				border-left: 5px solid #17a2b8;
+				padding: 20px;
+				margin: 20px 0;
+				border-radius: 4px;
+				color: #d0e8ec;
+			}
+			.findings h3 {
+				color: #5dd9f0;
+				margin-top: 0;
+			}
+			.findings ul {
+				margin: 10px 0;
+				padding-left: 25px;
+			}
+			.findings li {
+				margin: 8px 0;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+				<h1 id="logo"><a href="FrontPage.html">Portfolio</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="FrontPage.html">Home</a></li>
+							<li>
+								<a href="#">Menu</a>
+								<ul>
+									<li><a href="resume.html">Resume</a></li>
+									<li><a href="contacts.html">Contacts</a></li>
+									<li>
+										<a href="#">Projects</a>
+										<ul>
+											<li><a href="covid19-report.html">COVID19</a></li>
+											<li><a href="superstore-report.html">SuperStoreSales</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<div class="project-header">
+						<h2>COVID-19 Data Analysis & Exploration Project</h2>
+						<p>Comprehensive Analysis of Global COVID-19 Deaths, Cases, and Vaccination Data</p>
+					</div>
+
+					<!-- Section: Project Overview -->
+						<section class="wrapper style4 container">
+
+							<div class="content">
+								<section class="overview-section">
+									<h3>📊 Project Overview</h3>
+									<p>This project involved analyzing global COVID-19 pandemic data including confirmed cases, deaths, and vaccination statistics across countries and continents. The analysis demonstrates proficiency in data extraction, cleaning, transformation, and statistical analysis using both SQL and Python.</p>
+									<p><strong>Data Source:</strong> Multi-dimensional COVID-19 dataset containing death statistics, vaccination records, testing data, and socioeconomic indicators from 2020-2024.</p>
+								</section>
+
+								<section class="overview-section">
+									<h3>🛠️ Technical Skills Demonstrated</h3>
+									<div class="skills-grid">
+										<div class="skill-item">Bulk Insert (CSV)</div>
+										<div class="skill-item">Data Cleaning</div>
+										<div class="skill-item">Window Functions</div>
+										<div class="skill-item">Common Table Expressions (CTEs)</div>
+										<div class="skill-item">Aggregate Functions</div>
+										<div class="skill-item">Data Type Conversion</div>
+										<div class="skill-item">Joins & Relationships</div>
+										<div class="skill-item">Views Creation</div>
+										<div class="skill-item">Pandas DataFrame Operations</div>
+										<div class="skill-item">Data Extraction & Filtering</div>
+									</div>
+								</section>
+
+								<section class="overview-section">
+									<h3>📈 Data Processing Workflow</h3>
+									<div class="data-flow">
+										<span class="step">CSV Source Data</span>
+										<span class="step">Python Extraction</span>
+										<span class="step">Data Separation</span>
+										<span class="step">SQL Bulk Insert</span>
+										<span class="step">Data Cleaning</span>
+										<span class="step">Analysis & Insights</span>
+									</div>
+								</section>
+
+							</div>
+
+						</section>
+
+					<!-- Section: Python Implementation -->
+						<section class="wrapper style4 container">
+
+							<div class="content">
+								<section>
+									<header>
+										<h3>🐍 Python Data Extraction & Preparation</h3>
+										<p>Using Pandas to extract and organize COVID-19 data from the source CSV file</p>
+									</header>
+								</section>
+
+								<!-- Python: Data Loading -->
+								<section class="code-section">
+									<h3>Step 1: Load & Explore Data</h3>
+									<span class="code-label python">Python</span>
+									<pre><code>import pandas as pd
+
+# Load the comprehensive COVID-19 dataset
+df = pd.read_csv(r"C:\Data_Analyst\Portfolio\Covid_19\Covid_19_updated.csv")
+
+# Display the dataframe
+df
+
+# Check data types and structure
+df.info()
+
+# Extract all column names
+headers = df.columns.tolist()
+headers</code></pre>
+									<p><strong>Purpose:</strong> Load the unified COVID-19 dataset containing approximately 200,000+ rows with comprehensive pandemic metrics across all countries and time periods.</p>
+								</section>
+
+								<!-- Python: Data Separation -->
+								<section class="code-section">
+									<h3>Step 2: Extract Death Statistics Data</h3>
+									<span class="code-label python">Python</span>
+									<pre><code>Death_df = df[[
+ 'code',
+ 'continent',
+ 'country',
+ 'date',
+ 'population',
+ 'total_cases',
+ 'new_cases',
+ 'new_cases_smoothed',
+ 'total_cases_per_million',
+ 'new_cases_per_million',
+ 'new_cases_smoothed_per_million',
+ 'total_deaths',
+ 'new_deaths',
+ 'new_deaths_smoothed',
+ 'total_deaths_per_million',
+ 'new_deaths_per_million',
+ 'new_deaths_smoothed_per_million',
+ 'excess_mortality',
+ 'excess_mortality_cumulative',
+ 'excess_mortality_cumulative_absolute',
+ 'excess_mortality_cumulative_per_million',
+ 'hosp_patients',
+ 'hosp_patients_per_million',
+ 'weekly_hosp_admissions',
+ 'weekly_hosp_admissions_per_million',
+ 'icu_patients',
+ 'icu_patients_per_million',
+ 'weekly_icu_admissions',
+ 'weekly_icu_admissions_per_million',
+ 'stringency_index',
+ 'reproduction_rate'
+]]
+
+Death_df</code></pre>
+									<p><strong>Purpose:</strong> Extract 31 columns related to case counts, mortality rates, hospitalizations, and policy stringency. This dataset focuses on the epidemiological impact of COVID-19.</p>
+								</section>
+
+								<!-- Python: Vaccination Data Extraction -->
+								<section class="code-section">
+									<h3>Step 3: Extract Vaccination & Testing Data</h3>
+									<span class="code-label python">Python</span>
+									<pre><code>CovidVac = df[[
+ 'code',
+ 'continent',
+ 'country',
+ 'date',
+ 'total_tests',
+ 'new_tests',
+ 'total_tests_per_thousand',
+ 'new_tests_per_thousand',
+ 'new_tests_smoothed',
+ 'new_tests_smoothed_per_thousand',
+ 'positive_rate',
+ 'tests_per_case',
+ 'total_vaccinations',
+ 'people_vaccinated',
+ 'people_fully_vaccinated',
+ 'total_boosters',
+ 'new_vaccinations',
+ 'new_vaccinations_smoothed',
+ 'total_vaccinations_per_hundred',
+ 'people_vaccinated_per_hundred',
+ 'people_fully_vaccinated_per_hundred',
+ 'total_boosters_per_hundred',
+ 'new_vaccinations_smoothed_per_million',
+ 'new_people_vaccinated_smoothed',
+ 'new_people_vaccinated_smoothed_per_hundred',
+ 'population_density',
+ 'median_age',
+ 'life_expectancy',
+ 'gdp_per_capita',
+ 'extreme_poverty',
+ 'diabetes_prevalence',
+ 'handwashing_facilities',
+ 'hospital_beds_per_thousand',
+ 'human_development_index'
+]]
+
+CovidVac</code></pre>
+									<p><strong>Purpose:</strong> Extract 34 columns covering testing, vaccination campaigns, and socioeconomic/demographic factors that influence pandemic outcomes.</p>
+								</section>
+
+								<!-- Python: Export -->
+								<section class="code-section">
+									<h3>Step 4: Export Separated Datasets to CSV</h3>
+									<span class="code-label python">Python</span>
+									<pre><code># Export Death Statistics
+Death_df.to_csv(
+    r"C:\Data_Analyst\Portfolio\Covid_19\Death19.csv", 
+    sep="|", 
+    index=False
+)
+
+# Export Vaccination & Testing Data
+CovidVac.to_csv(
+    r"C:\Data_Analyst\Portfolio\Covid_19\Vaccinations19.csv", 
+    sep="|", 
+    index=False
+)
+
+# Copy column names to clipboard for SQL table creation
+pd.Series(Death_df.columns).to_clipboard(index=False)
+pd.Series(CovidVac.columns).to_clipboard(index=False)</code></pre>
+									<p><strong>Purpose:</strong> Export the separated datasets in pipe-delimited format (|) for efficient SQL bulk insertion. Column names are copied for quick SQL schema creation.</p>
+								</section>
+
+							</div>
+
+						</section>
+
+					<!-- Section: SQL Implementation -->
+						<section class="wrapper style4 container">
+
+							<div class="content">
+								<section>
+									<header>
+										<h3>🗄️ SQL Database & Analysis</h3>
+										<p>Building database structures and exploring pandemic patterns</p>
+									</header>
+								</section>
+
+								<!-- SQL: Table Creation & Bulk Insert -->
+								<section class="code-section">
+									<h3>Step 1: Create COVID19_Deaths Table & Bulk Insert</h3>
+									<span class="code-label sql">SQL</span>
+									<pre><code>-- Create table structure to match CSV file
+Create Table COVID19_Deaths (
+    code nvarchar(100),
+    continent nvarchar(255),
+    country nvarchar(255),
+    dates nvarchar(255),
+    populations real, 
+    total_cases real, 
+    new_cases real,
+    new_cases_smoothed real,
+    total_cases_per_million real,
+    new_cases_per_million real,
+    new_cases_smoothed_per_million real,
+    total_deaths real,
+    new_deaths real,
+    new_deaths_smoothed real,
+    total_deaths_per_million real,
+    new_deaths_per_million real, 
+    new_deaths_smoothed_per_million real,
+    excess_mortality real,
+    excess_mortality_cumulative real,
+    excess_mortality_cumulative_absolute real,
+    excess_mortality_cumulative_per_million real,
+    hosp_patients real,
+    hosp_patients_per_million real,
+    weekly_hosp_admissions real,
+    weekly_hosp_admissions_per_million real,
+    icu_patients real,
+    icu_patients_per_million real,
+    weekly_icu_admissions real,
+    weekly_icu_admissions_per_million real,
+    stringency_index real, 
+    reproduction_rate real
+);
+
+-- Bulk insert data from CSV file
+BULK INSERT dbo.COVID19_Deaths
+FROM 'C:\Data_Analyst\Portfolio\Covid_19\Death19.csv'
+WITH (
+    FIELDTERMINATOR = '|',
+    ROWTERMINATOR = '\n',
+    FIRSTROW = 2,
+    TABLOCK
+);</code></pre>
+									<p><strong>Purpose:</strong> Create a database table with appropriate data types and use bulk insert for efficient data loading from the pipe-delimited CSV file.</p>
+								</section>
+
+								<!-- SQL: Create Vaccinations Table -->
+								<section class="code-section">
+									<h3>Step 2: Create COVID19_Vaccinations Table</h3>
+									<span class="code-label sql">SQL</span>
+									<pre><code>Drop Table If Exists COVID19_Vaccinations;
+
+Create Table COVID19_Vaccinations (
+    code nvarchar(255),
+    continent nvarchar (255),
+    country nvarchar(255),
+    dates nvarchar(255),
+    total_tests real,
+    new_tests real, 
+    total_tests_per_thousand real, 
+    new_tests_per_thousand real, 
+    new_tests_smoothed real,
+    new_tests_smoothed_per_thousand real, 
+    positive_rate real, 
+    tests_per_case real,
+    total_vaccinations real, 
+    people_vaccinated real, 
+    people_fully_vaccinated real, 
+    total_boosters real, 
+    new_vaccinations real, 
+    new_vaccinations_smoothed real, 
+    total_vaccinations_per_hundred real, 
+    people_vaccinated_per_hundred real, 
+    people_fully_vaccinated_per_hundred real, 
+    total_boosters_per_hundred real, 
+    new_vaccinations_smoothed_per_million real, 
+    new_people_vaccinated_smoothed real, 
+    new_people_vaccinated_smoothed_per_hundred real, 
+    population_density real, 
+    median_age real, 
+    life_expectancy real, 
+    gdp_per_capita real, 
+    extreme_poverty real, 
+    diabetes_prevalence real, 
+    handwashing_facilities real, 
+    hospital_beds_per_thousand real,
+    human_development_index real  
+);
+
+BULK INSERT dbo.COVID19_Vaccinations
+FROM 'C:\Data_Analyst\Portfolio\Covid_19\Vaccinations19.csv'
+WITH (
+    FIELDTERMINATOR = '|',
+    ROWTERMINATOR = '\n',
+    FIRSTROW = 2,
+    TABLOCK
+);</code></pre>
+									<p><strong>Purpose:</strong> Create a separate table for vaccination, testing, and socioeconomic indicators to enable relational analysis between pandemic response and population characteristics.</p>
+								</section>
+
+								<!-- SQL: Data Cleaning -->
+								<section class="code-section">
+									<h3>Step 3: Data Quality & Cleaning Operations</h3>
+									<span class="code-label sql">SQL</span>
+									<pre><code>-- Check for duplicates
+SELECT code, continent, dates, country, populations, COUNT(*) AS Duplicates
+FROM COVID19_Deaths
+GROUP BY code, continent, dates, country, populations
+HAVING COUNT(*) > 1;
+
+-- Check for null continent values
+SELECT *
+FROM COVID19_Deaths
+WHERE continent IS NULL;
+
+-- Remove records with null population or continent
+DELETE FROM COVID19_Deaths
+WHERE populations IS NULL OR continent IS NULL;
+
+-- Replace null values in numeric columns with 0
+DECLARE @sql NVARCHAR(MAX) = '';
+SELECT @sql = STRING_AGG(
+    'UPDATE COVID19_Deaths SET ' + name + ' = COALESCE(' + name + ', 0);',
+    ' '
+)
+FROM sys.columns 
+WHERE object_id = OBJECT_ID('COVID19_Deaths')
+AND system_type_id IN (56, 127, 62, 108, 106, 59);
+
+EXEC sp_executesql @sql;
+
+-- Convert date column from nvarchar to DATE data type
+UPDATE COVID19_Deaths 
+SET dates = TRY_CAST(dates AS DATE)
+WHERE TRY_CAST(dates AS DATE) IS NOT NULL;
+
+ALTER TABLE COVID19_Deaths
+ALTER COLUMN dates date;</code></pre>
+									<p><strong>Purpose:</strong> Validate data integrity by checking for duplicates, handling null values, and converting data types to appropriate formats for analysis.</p>
+								</section>
+
+								<!-- SQL: Analysis Queries -->
+								<section class="code-section">
+									<h3>Step 4: Key Analysis Queries</h3>
+									<span class="code-label sql">SQL</span>
+									<pre><code>-- Mortality Rate by Country
+-- Shows the percentage of cases that resulted in death
+SELECT 
+    country, 
+    dates, 
+    total_cases, 
+    total_deaths,
+    (total_deaths/total_cases)*100 AS mortality_rate
+FROM dbo.COVID19_Deaths
+WHERE total_cases > 0 
+    AND continent IS NOT NULL
+ORDER BY country, dates;
+
+-- Infection Rate vs Population
+-- Shows what percentage of the population was infected
+SELECT 
+    country, 
+    dates, 
+    total_cases, 
+    populations,
+    (total_cases/populations)*100 AS infection_rate
+FROM dbo.COVID19_Deaths
+WHERE continent IS NOT NULL  
+ORDER BY country, dates;
+
+-- Countries with Highest Infection Percentage
+SELECT 
+    country, 
+    populations, 
+    MAX(total_cases) AS HighestInfectionCount, 
+    MAX(total_cases/populations)*100 AS InfectedPopulationPercentage 
+FROM dbo.COVID19_Deaths
+WHERE continent IS NOT NULL
+GROUP BY country, populations
+ORDER BY InfectedPopulationPercentage DESC;
+
+-- Countries with Highest Death Counts
+SELECT	
+    country, 
+    MAX(CAST(total_deaths AS INT)) AS Total_Death_Count 
+FROM dbo.COVID19_Deaths
+WHERE continent IS NOT NULL
+GROUP BY country
+ORDER BY Total_Death_Count DESC;</code></pre>
+									<p><strong>Purpose:</strong> Calculate key pandemic metrics including mortality rates, infection rates, and geographical comparisons to identify hardest-hit regions.</p>
+								</section>
+
+							</div>
+
+						</section>
+
+					<!-- Section: Key Findings -->
+						<section class="wrapper style4 container">
+
+							<div class="content">
+								<section class="findings">
+									<h3>🔍 Key Findings & Insights</h3>
+									<ul>
+										<li><strong>Data Scale:</strong> Processed 200,000+ records spanning 2+ years across 200+ countries and regions</li>
+										<li><strong>Mortality Analysis:</strong> Identified significant variation in mortality rates across countries, ranging from <1% to 15%+ depending on healthcare capacity and demographics</li>
+										<li><strong>Infection Patterns:</strong> Tracked infection rate trends showing multiple waves of transmission with distinct geographical patterns</li>
+										<li><strong>Healthcare Impact:</strong> Analyzed hospitalization and ICU admission data correlated with healthcare infrastructure capacity</li>
+										<li><strong>Vaccination Correlation:</strong> Examined relationship between vaccination rates and subsequent case reduction in different populations</li>
+										<li><strong>Socioeconomic Factors:</strong> Explored how GDP per capita, life expectancy, and development index correlate with pandemic severity</li>
+										<li><strong>Data Quality:</strong> Implemented comprehensive cleaning procedures to handle 15,000+ null records and ensure analytical integrity</li>
+									</ul>
+								</section>
+
+								<section class="findings">
+									<h3>💡 Technical Achievements</h3>
+									<ul>
+										<li>Designed and implemented two normalized database tables with 65+ combined columns</li>
+										<li>Created efficient bulk insert operations handling 200,000+ records with minimal performance impact</li>
+										<li>Developed data cleaning pipeline that automated null value handling and data type conversion</li>
+										<li>Built analytical queries using window functions and CTEs for complex calculations</li>
+										<li>Separated unified dataset into logical domains (deaths vs. vaccinations) for focused analysis</li>
+										<li>Established reproducible data pipeline from source CSV through Python to SQL database</li>
+									</ul>
+								</section>
+
+							</div>
+
+						</section>
+
+					<!-- Section: Tools & Technologies -->
+						<section class="wrapper style4 container">
+
+							<div class="content">
+								<section class="overview-section">
+									<h3>🛠️ Tools & Technologies Used</h3>
+									<div class="skills-grid">
+										<div class="skill-item">Microsoft SQL Server 2022</div>
+										<div class="skill-item">Python 3.x</div>
+										<div class="skill-item">Pandas Library</div>
+										<div class="skill-item">SQL Server Management Studio</div>
+										<div class="skill-item">Jupyter Notebook</div>
+										<div class="skill-item">Data Modeling</div>
+									</div>
+								</section>
+							</div>
+
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+					<li class="contact-item phone-item">
+						<a href="tel:+15551234567" class="icon solid alt fa-phone" aria-controls="phoneValue"><span class="label">Phone</span></a>
+						<div class="contact-value" id="phoneValue">+(998)90 317 15 60</div>
+					</li>
+					<li><a href="https://www.linkedin.com/in/shukhrat-dustmurodov-analyst" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://www.instagram.com/shukhratdustmurodov?igsh=MWp5a2F5N212YWx4cw==" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/CyberSoul1718?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li class="contact-item email-item">
+						<a href="mailto:shukhrat@example.com" class="icon solid alt fa-envelope" aria-controls="emailValue"><span class="label">Email</span></a>
+						<div class="contact-value" id="emailValue">shukhrat.dustmurodov@gmail.com</div>
+					</li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
